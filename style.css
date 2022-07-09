@@ -19,11 +19,11 @@ html{
     background: #f1f1f1;
 }
 ::-webkit-scrollbar-thumb {
-    background: #888;
+    background: #222;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #555;
+    background: #000;
 }
 
 /* all similar content styling codes */
@@ -35,11 +35,11 @@ section{
     padding: 0 80px;
     margin: auto;
 }
-.about, .services, .skills, .links, .contact, footer{
+.about, .experiences, .skills, .links, .contact, footer{
     font-family: 'Poppins', sans-serif;
 }
 .about .about-content,
-.services .serv-content,
+.experiences .serv-content,
 .skills .skills-content,
 .contact .contact-content{
     display: flex;
@@ -71,7 +71,7 @@ section .title::after{
     bottom: -8px;
     left: 50%;
     font-size: 20px;
-    color: dimgray;
+    color: rgb(0, 0, 0);
     padding: 0 5px;
     background: #fff;
     transform: translateX(-50%);
@@ -88,7 +88,7 @@ section .title::after{
 }
 .navbar.sticky{
     padding: 15px 0;
-    background: dimgray;
+    background: #111;
 }
 .navbar .max-width{
     display: flex;
@@ -101,7 +101,7 @@ section .title::after{
     font-weight: 600;
 }
 .navbar .logo a span{
-    color: dimgray;
+    color: #111;
     transition: all 0.3s ease;
 }
 .navbar.sticky .logo a span{
@@ -120,7 +120,7 @@ section .title::after{
     transition: color 0.3s ease;
 }
 .navbar .menu li a:hover{
-    color: dimgray;
+    color: #111;
 }
 .navbar.sticky .menu li a:hover{
     color: #fff;
@@ -137,7 +137,7 @@ section .title::after{
     position: fixed;
     height: 45px;
     width: 42px;
-    background: dimgray;
+    background: #111;
     right: 30px;
     bottom: 10px;
     text-align: center;
@@ -165,7 +165,7 @@ section .title::after{
 /* home section styling */
 .home{
     display: flex;
-    background: url("images/banner.jpg") no-repeat center;
+    background: url("images/background.jpg") no-repeat center;
     height: 100vh;
     color: #fff;
     min-height: 500px;
@@ -193,23 +193,23 @@ section .title::after{
     margin: 5px 0;
 }
 .home .home-content .text-3 span{
-    color: dimgray;
+    color: #111;
     font-weight: 500;
 }
 .home .home-content a{
     display: inline-block;
-    background: dimgray;
+    background: #111;
     color: #fff;
     font-size: 25px;
     padding: 12px 36px;
     margin-top: 20px;
     font-weight: 400;
     border-radius: 6px;
-    border: 2px solid dimgray;
+    border: 2px solid #111;
     transition: all 0.3s ease;
 }
 .home .home-content a:hover{
-    color: dimgray;
+    color: #111;
     background: none;
 }
 
@@ -235,69 +235,71 @@ section .title::after{
     margin-bottom: 10px;
 }
 .about .about-content .right .text span{
-    color: dimgray;
+    color: #111;
 }
 .about .about-content .right p{
     text-align: justify;
 }
 .about .about-content .right a{
     display: inline-block;
-    background: dimgray;
+    background: #111;
     color: #fff;
     font-size: 20px;
     font-weight: 500;
     padding: 10px 30px;
     margin-top: 20px;
     border-radius: 6px;
-    border: 2px solid dimgray;
+    border: 2px solid #111;
     transition: all 0.3s ease;
 }
 .about .about-content .right a:hover{
-    color: dimgray;
+    color: #111;
     background: none;
 }
 
-/* services section styling */
-.services, .links{
+/* experiences section styling */
+.experiences, .links{
     color:#fff;
-    background: #111;
+    background: #222;
 }
-.services .title::before,
+.experiences .title::before,
 .links .title::before{
     background: #fff;
 }
-.services .title::after,
+.experiences .title::after,
 .links .title::after{
-    background: #111;
-    content: "what i provide";
-}
-.services .serv-content .card{
-    width: calc(33% - 20px);
     background: #222;
+    color: #fff;
+    content: "click for more";
+}
+.experiences .serv-content .card{
+    width: calc(33% - 20px);
+    background: #000;
     text-align: center;
-    border-radius: 6px;
+    border-radius: 10px;
     padding: 50px 25px;
     cursor: pointer;
     transition: all 0.3s ease;
 }
-.services .serv-content .card:hover{
-    background: dimgray;
+.experiences .serv-content .card:hover{
+    color: #000;
+    background: white;
 }
-.services .serv-content .card .box{
+.experiences .serv-content .card .box{
     transition: all 0.3s ease;
 }
-.services .serv-content .card:hover .box{
+.experiences .serv-content .card:hover .box{
     transform: scale(1.05);
 }
-.services .serv-content .card i{
+.experiences .serv-content .card i{
     font-size: 50px;
-    color: dimgray;
+    color: #fff;
     transition: color 0.3s ease;
 }
-.services .serv-content .card:hover i{
+.experiences .serv-content .card:hover i{
     color: #fff;
 }
-.services .serv-content .card .text{
+.experiences .serv-content .card .text{
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
@@ -321,18 +323,18 @@ section .title::after{
 }
 .skills .skills-content .left a{
     display: inline-block;
-    background: dimgray;
+    background: #111;
     color: #fff;
     font-size: 18px;
     font-weight: 500;
     padding: 8px 16px;
     margin-top: 20px;
-    border-radius: 6px;
-    border: 2px solid dimgray;
+    border-radius: 10px;
+    border: 2px solid #111;
     transition: all 0.3s ease;
 }
 .skills .skills-content .left a:hover{
-    color: dimgray;
+    color: #111;
     background: none;
 }
 .skills .skills-content .right .bars{
@@ -360,41 +362,46 @@ section .title::after{
     height: 100%;
     left: 0;
     top: 0;
-    background: dimgray;
+    background: #111;
 }
 .skills-content .right .cplusplus::before{
     width: 90%;
 }
 .skills-content .right .python::before{
-    width: 70%;
+    width: 75%;
 }
 .skills-content .right .java::before{
-    width: 80%;
+    width: 75%;
 }
 .skills-content .right .html::before{
-    width: 50%;
+    width: 40%;
 }
 .skills-content .right .css::before{
-    width: 50%;
+    width: 40%;
 }
 .skills-content .right .javascript::before{
-    width: 40%;
+    width: 30%;
 }
 
 /* links section styling */
 .links .title::after{
-    content: "who with me";
+    content: "more of me";
 }
 .links .carousel .card{
-    background: #222;
+    background: #000;
     border-radius: 6px;
     padding: 25px 35px;
     text-align: center;
     overflow: hidden;
     transition: all 0.3s ease;
 }
+a:visited{
+    text-decoration: none;
+    color: white;
+}
 .links .carousel .card:hover{
-    background: dimgray;
+    color: #000;
+    background: white;
 }
 .links .carousel .card .box{
     display: flex;
@@ -416,7 +423,7 @@ section .title::after{
     width: 150px;
     object-fit: cover;
     border-radius: 50%;
-    border: 5px solid dimgray;
+    border: 5px solid #000;
     transition: all 0.3s ease;
 }
 .links .carousel .card:hover img{
@@ -432,7 +439,7 @@ section .title::after{
     margin: 0 5px;
     outline: none!important;
     border-radius: 50%;
-    border: 2px solid dimgray!important;
+    border: 2px solid #000!important;
     transition: all 0.3s ease;
 }
 .owl-dot.active{
@@ -441,7 +448,7 @@ section .title::after{
 }
 .owl-dot.active,
 .owl-dot:hover{
-    background: dimgray!important;
+    background: #000!important;
 }
 
 /* contact section styling */
@@ -472,7 +479,7 @@ section .title::after{
 }
 .contact .contact-content .row i{
     font-size: 25px;
-    color: dimgray;
+    color: #111;
 }
 .contact .contact-content .info .head{
     font-weight: 500;
@@ -531,12 +538,12 @@ section .title::after{
   border-radius: 6px;
   cursor: pointer;
   flex-wrap: nowrap;
-  background: dimgray;
-  border: 2px solid dimgray;
+  background: #111;
+  border: 2px solid #111;
   transition: all 0.3s ease;
 }
 .right form .button-area button:hover{
-  color: dimgray;
+  color: #111;
   background: none;
 }
 /* footer section styling */
@@ -547,7 +554,7 @@ footer{
     text-align: center;
 }
 footer span a{
-    color: dimgray;
+    color: #111;
     text-decoration: none;
 }
 footer span a:hover{
@@ -622,7 +629,7 @@ footer span a:hover{
     .about .about-content .right{
         flex: 100%;
     }
-    .services .serv-content .card{
+    .experiences .serv-content .card{
         width: calc(50% - 10px);
         margin-bottom: 20px;
     }
@@ -646,7 +653,7 @@ footer span a:hover{
     .home .home-content a{
         font-size: 20px;
     }
-    .services .serv-content .card{
+    .experiences .serv-content .card{
         width: 100%;
     }
 }
